@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Exam Score Predictor</title>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyzer</title>
+</head>
+<body>
+    <img src="static/images/banner 01.png">
+   <b> <h1 align = "center">Exam Score Predictor Web Application</h1></b>
+    <!DOCTYPE html>
+<body>
+    <!-- <center><h1>Exam Score Predictor</h1></center> -->
+    <center><form action="/predict" method="post">
+        <h2>Enter Hours Study in Numbers!</h2>
+        <!-- <label for="study_hours">Study Hours:</label> -->
+        <input type="number" id="study_hours" name="study_hours" required>
+        <button type="submit">Predict</button>
+    </form></center>
+    <center>{% if prediction is defined %}
+        <h2>Your Predicted Score: {{ prediction }}%</h2>
+    {% endif %}</center>
+</body>
+</html>
+
